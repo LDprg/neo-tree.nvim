@@ -374,9 +374,6 @@ end
 
 Preview.show = function(state)
   local node = state.tree:get_node()
-  if node.type == "directory" then
-    return
-  end
 
   if instance then
     instance:findWindow(state)
